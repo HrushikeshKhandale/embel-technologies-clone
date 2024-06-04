@@ -8,6 +8,7 @@ import check3 from "./images/chek_o.png";
 import Achievements from "./Achievements";
 
 const Home = () => {
+  // eslint-disable-next-line
   const phrases = [
     "IOT Products",
     "Billing Software",
@@ -21,6 +22,7 @@ const Home = () => {
   const [isTyping, setIsTyping] = useState(true);
 
   useEffect(() => {
+    
     const interval = setInterval(() => {
       if (isTyping) {
         const phrase = phrases[currentPhraseIndex];

@@ -6,10 +6,14 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-white" >
+    <nav className="navbar navbar-expand-lg bg-white">
       <div className="container-fluid">
         <Link className="navbar-brand mx-5" to="/">
-          <img src={logo} style={{ height: "3.1rem" }} alt="embel technology logo" />
+          <img
+            src={logo}
+            style={{ height: "3.1rem" }}
+            alt="embel technology logo"
+          />
         </Link>
         <button
           className="navbar-toggler"
@@ -74,7 +78,10 @@ const Navbar = () => {
                 style={{ marginRight: "1rem" }}
               >
                 <i className="fas fa-phone fa-rotate-30 text-blue fa-2x"></i>
-                <div className="position-absolute" style={{ top: "-7px", left: "20px" }}>
+                <div
+                  className="position-absolute"
+                  style={{ top: "-7px", left: "20px" }}
+                >
                   <span>
                     <i className="fas fa-comment-dots text-orange"></i>
                   </span>
@@ -82,7 +89,7 @@ const Navbar = () => {
               </a>
             </li>
             <div className="border-end"></div>
-            <li className="nav-item d-flex align-items-center">
+            <li className="nav-item d-flex align-items-center" style={{marginRight:'2rem'}}>
               <a
                 href="https://wa.me/8888741044?text="
                 className="position-relative animated tada infinite"
