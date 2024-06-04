@@ -1,38 +1,419 @@
-.App {
-  text-align: center;
+nav {
+  margin-top: 0.1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#navbarNav ul {
+  margin-left: 13rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#navbarNav ul li {
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+#navbarNav ul li a {
+  color: #2851c3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+#navbarNav ul li a:hover {
+  color: #933f02;
+}
+
+
+#navContact li{
+  margin-left:3rem ;
+}
+
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+.tada {
+  animation-name: tada;
+}
+
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  10%,
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%,
+  60%,
+  80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.text-blue {
+  color: #1842b6;
+}
+
+.text-orange {
+  color: #f58634;
+}
+
+.text-success {
+  color: #05d805;
+}
+
+.home img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.achievement ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+  font-family: "Saira", sans-serif;
+  background: linear-gradient(90deg, #ff6402, #000d7b);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.achievement ul li {
+  color: #2851c3;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  list-style: none;
+}
+
+.achievement span {
+  font-size: 1.2rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.us .wma {
+  position: relative;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #010f89;
+  top: 1rem;
 }
 
-@keyframes App-logo-spin {
+.typewriter-container {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+.typewriter {
+  display: inline-block;
+  animation: typing 2s steps(30, end), blink-caret .2s step-end infinite alternate;
+}
+
+.typewriter-reverse {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  animation: erasing 2s steps(30, end) forwards;
+}
+
+@keyframes typing {
   from {
-    transform: rotate(0deg);
+    width: 0;
   }
   to {
-    transform: rotate(360deg);
+    width: 100%;
   }
+}
+
+@keyframes erasing {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.why-choose-us p {
+  padding: 10px;
+}
+
+.card p,
+ul li {
+  color: gray;
+  font-weight: 300;
+}
+
+footer 
+h3,
+p {
+  color: white;
+  font-weight: 500;
+}
+
+footer a:hover {
+  font-size: 1.1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+footer i{
+  color: green;
+}
+
+.bg-image {
+  width: 100vw;
+  height: 45vh;
+}
+
+.services-title {
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Saira", sans-serif;
+  font-weight: 600;
+  position: absolute;
+  left: 43.5%;
+  transform: translateX(-50%);
+  top: 11.7rem;
+}
+
+.services-title2 {
+  text-align: center;
+  color: white;
+  font-family: "Saira", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  position: absolute;
+  left: 25%;
+  transform: translateX(-50%);
+  top: 15rem;
+}
+
+.breadcrumb {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1.2rem;
+  font-weight: 400;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 21rem;
+}
+
+.breadcrumb-link {
+  text-decoration: none;
+  color: white;
+}
+
+.cards {
+  padding: 2rem;
+  color: gray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 100%;
+  max-width: 25rem;
+  margin: 1rem;
+  border-top: 4px solid blue;
+  border-radius: 15px;
+  background: white;
+}
+
+.iotDev {
+  position: relative;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-button {
+  padding: 2rem;
+  text-align: center;
+}
+
+.read-more-btn {
+  background: darkorange;
+  border-radius: 3rem;
+  padding: 1rem;
+}
+
+@media (max-width: 1200px) {
+  #navbarNav ul {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 1.2rem;
+    top: 10rem;
+  }
+
+  .services-title {
+    font-size: 2rem;
+    top: 12rem;
+  }
+
+  .breadcrumb {
+    font-size: 1rem;
+    top: 18rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-title {
+    font-size: 1rem;
+    top: 8rem;
+  }
+
+  .services-title {
+    font-size: 1.5rem;
+    top: 10rem;
+  }
+
+  .breadcrumb {
+    font-size: 0.8rem;
+    top: 16rem;
+  }
+}
+
+
+/* home textx animations */
+
+@keyframes slideUp {
+  from {
+    transform: rotateY(1rem);
+  }
+  to {
+    transform: translateY(2rem);
+  }
+}
+
+.embel1 {
+  animation: slideUp 1s ease-out forwards;
+}
+
+
+
+@keyframes slideDown {
+  from {
+    transform: rotateY(2rem);
+  }
+  to {
+    transform: translateY(1rem);
+  }
+}
+
+.embel2 {
+  animation: slideDown 1s ease-out forwards;
+}
+
+
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.embel-animation {
+  animation: slideIn .5s ease-out forwards;
+}
+/* services title animation*/
+@keyframes sevicesTitle {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.services-title {
+  animation: sevicesTitle .5s ease-out forwards;
+}
+
+
+@keyframes sevicesTitle2 {
+  from {
+    transform: translateX(80%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.services-title2 {
+  animation: sevicesTitle2 .5s ease-out forwards;
+}
+
+
+
+
+/* navbar contacts */
+#navContact {
+  position: relative;
+  right: 5rem;
+}
+
+
+/* social */
+.social{
+  padding: 1rem 0 1rem 0;
+}
+.social i{
+color: white;
+}
+
+/* home animation */
+.why-choose-us{
+  
 }
