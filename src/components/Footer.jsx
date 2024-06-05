@@ -76,7 +76,7 @@ const Footer = () => {
                     className="text-reset"
                     style={{ textDecoration: "none" }}
                   >
-                   <span><i class="fas fa-angle-right footer-link me-2" ></i></span> About Us
+                   <span><i class="fas fa-angle-right footer-link me-2"   ></i></span> About Us
                   </a>
                 </p>
                 <p>
@@ -115,11 +115,12 @@ const Footer = () => {
                   </a>
                 </p>
                 <p>
+                  
                   <a
                     href="/"
                     className="text-reset"
                     style={{ textDecoration: "none" }}
-                  >
+                  ><span><i class="fas fa-angle-right footer-link me-2" ></i></span> 
                     Career
                   </a>
                 </p>
@@ -128,7 +129,7 @@ const Footer = () => {
                     href="/"
                     className="text-reset"
                     style={{ textDecoration: "none" }}
-                  >
+                  ><span><i class="fas fa-angle-right footer-link me-2" ></i></span> 
                     Partner With Us
                   </a>
                 </p>
@@ -137,7 +138,7 @@ const Footer = () => {
                     href="/"
                     className="text-reset"
                     style={{ textDecoration: "none" }}
-                  >
+                  ><span><i class="fas fa-angle-right footer-link me-2" ></i></span> 
                     Contact
                   </a>
                 </p>
