@@ -124,7 +124,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <p style={{ fontSize: "1.2rem", marginTop: "2.5rem" }}>
+        <p style={{ fontSize: "1.2rem",color:'gray',width:'65em',margin:'0 auto',paddingTop:'3rem' }}>
           We are passionate, results-oriented to Build Product based application
           & IOT Products. Team working on your business for connecting dots in
           Marketing, Products Design & Development.
